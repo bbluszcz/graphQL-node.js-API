@@ -25,7 +25,7 @@ mongoose
     process.env.MONGO_USER}:${
     process.env.MONGO_PASSWORD}@cluster0-9trvq.mongodb.net/${
     process.env.MONGO_DB}?retryWrites=true`,
-    { useNewUrlParser: true}
+    {useNewUrlParser: true}
   )
   .then(() => {
     app.listen(3000);
