@@ -11,8 +11,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use(
-  '/graphql',
-  graphqlHttp({
+  '/graphql', graphqlHttp({
     schema: graphQlSchema,
     rootValue: graphQlResolvers,
     graphiql: true
